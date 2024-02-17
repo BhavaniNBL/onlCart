@@ -5,7 +5,7 @@ import lombok.*;
 @Table(name = "Card")
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@Access(AccessType.FIELD)
 public class CardEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +21,3 @@ public class CardEntity {
 
     // Other card attributes and getters/setters
 }
-

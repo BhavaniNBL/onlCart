@@ -1,15 +1,14 @@
 package com.onlinestore.Departmental.model;
-
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
+import jakarta.persistence.*;
 
 @Data
 @NoArgsConstructor
 @Entity
 @Table(name = "addresses")
+@Access(AccessType.FIELD)
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
